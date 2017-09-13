@@ -29,16 +29,40 @@ Reveal.initialize({
 
 To add a d3.js visualizations to your presentation, simply create a container element with the
 class `fig-container`, the attribute `data-fig-id` with the figure id, and `data-file` with the
-path to the html page with the d3.js visualizations. The container can be a `div` or `span` element
-in a slide or the `section` element to add the visualizations to the background.
-
-In the example, `index.html` contains the following code:
+path to the html page with the d3.js visualizations. The container can be a `div`, `span` or other
+element.
 
 ```html
 <section>
     <div class="fig-container"
         data-fig-id="fig-collision-detection"
         data-file="Collision-Detection.html"></div>
+</section>
+```
+
+You can also embed the visualization in the background by adding the `fig-container` class to
+the section element like in the demo under `demo/index.html`.
+
+```html
+<section class="fig-container"
+        data-fig-id="fig-collision-detection"
+        data-file="Collision-Detection.html"
+        data-transitions="2">
+    <h2>d3.js plugin for reveal.js</h2>
+
+    Press right arrow to trigger transitions and left arrow to invert transition.
+</section>
+```
+
+Finally, you can embed visualization in markdown slides using the
+[special syntax](https://github.com/hakimel/reveal.js/#element-attributes) to add attributes
+markdown elements.
+
+```html
+<section data-markdown>
+    <script type="text/template">
+        <!-- .element: class="fig-container" data-fig-id="fig-collision-detection" data-file="Collision-Detection.html"-->
+    </script>
 </section>
 ```
 
