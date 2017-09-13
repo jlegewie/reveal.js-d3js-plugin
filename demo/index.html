@@ -6,21 +6,30 @@
     <body>
         <div class="reveal">
             <div class="slides">
-                <section>
+                <!-- Embed d3.js visualizations using class 'fig-container', 'data-fig-id' 
+                    for the figure ID, and 'data-file' for the path to the html file. When the 'fig-container' class is assigned to a 'section' element (like here),
+                    the visualizations is embedded in the background. When it is assigned to
+                    a different countainer element within a section, the visualizations is embedded
+                    in the slide.
+
+                    To add transitions triggered as fragments, simply add two global variables
+                    to the iframe html 'Collision-Detection.html': 
+                    
+                    1. '_transitions' is an array with functions that for each transition.
+                    2. `_inverse_transitions` is an array with functions that revert each
+                        transition when user navigates back. `_inverse_transitions` can be set to
+                        `[]` if this functionality is not required.
+
+                    The attribute 'data-transitions' for the container element is optional and
+                    overrides the number of transitions in the d3.js visualizations.
+                -->
+                <section class="fig-container"
+                        data-fig-id="fig-collision-detection"
+                        data-file="Collision-Detection.html"
+                        data-transitions="2">
                     <h2>d3.js plugin for reveal.js</h2>
                 </section>
 
-                <!-- Embed d3.js visualizations using class 'fig-container', 'data-fig-id' 
-                    for the figure ID, and 'data-file' for the path to the html file.
-                    To add transitions that are triggered as fragments, simply add 
-                    two global variables to the iframe html: '_transitions' and 
-                    '_inverse_transitions' to invert the transition.
-                -->
-                <section>
-                    <div class="fig-container"
-                        data-fig-id="fig-collision-detection"
-                        data-file="Collision-Detection.html"></div>
-                </section>
             </div>
         </div>
 
