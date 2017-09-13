@@ -34,7 +34,7 @@ var Reveald3js = window.Reveald3js || (function(){
             // add fragments to slide for figure transitions
             var transitions_settings = parseInt(element.getAttribute('data-transitions'), 10),
                 transitions_file = !(fig._transitions) ? 0 : fig._transitions.length,
-                transitions = (transitions_settings || transitions_file);
+                transitions = isNaN(transitions_settings) ? transitions_file : transitions_settings;
             if(transitions) {
                 var fragments = d3.select(slide)
                     .selectAll('.fragment.fig-transition')
