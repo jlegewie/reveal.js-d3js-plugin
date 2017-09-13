@@ -4,7 +4,7 @@
 with support for transitions triggerd by normal slide navigation. d3.js visualizations are embed as
 iframe elements.
 
-[Check out the live demo](https://jlegewie.github.io/demo-revealjs-d3js/index.html)
+[Check out the live demo](https://jlegewie.github.io/reveal.js-d3js-plugin/demo/index.html)
 
 
 ## Installation
