@@ -66,7 +66,7 @@ var Reveald3js = window.Reveald3js || (function(){
     // propagate keydown when focus is on iframe
     // https://stackoverflow.com/a/41361761/2503795
     window.document.addEventListener('iframe-keydown',
-        () => Reveal.triggerKey(event.detail.keyCode), false);
+        (event) => Reveal.triggerKey(event.detail.keyCode), false);
 
     // figure transitions on fragment change
     Reveal.addEventListener('fragmentshown', function(event) {
