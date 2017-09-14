@@ -25,6 +25,8 @@ var Reveald3js = window.Reveald3js || (function(){
             .attr('scrolling', 'no')
             .style('width', '100%')
             .style('height', '100%')
+            .style('max-width', '100%')
+            .style('max-height', '100%')
             .style('z-index', 1)
             .node();
 
