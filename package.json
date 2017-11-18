@@ -1,0 +1,22 @@
+{
+  "name": "reveal.js-d3js",
+  "version": "1.0.0",
+  "description": "Add dynamic d3.js visualizations to your reveal.js presentations",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlegewie/reveal.js-d3js-plugin.git"
+  },
+  "keywords": [
+    "reveal",
+    "d3.js"
+  ],
+  "author": "Joscha Legewie",
+  "license": "MIT, Copyright (C) 2017 Joscha Legewie",
+  "bugs": {
+    "url": "https://github.com/jlegewie/reveal.js-d3js-plugin/issues"
+  },
+  "homepage": "https://github.com/jlegewie/reveal.js-d3js-plugin#readme"
+}
