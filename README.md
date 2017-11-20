@@ -9,6 +9,28 @@ iframe elements.
 
 ## Installation
 
+### npm
+
+1. Download and install the package in your project:
+
+`npm install --save reveal.js-d3js`
+
+2. Add the plugins to the dependencies in your presentation
+
+```javascript
+Reveal.initialize({
+	// ...
+	dependencies: [
+		// ...
+		{ src: 'https://d3js.org/d3.v4.min.js' },
+		{ src: 'plugin/d3js/d3js.js' },
+		// ...
+	]
+});
+```
+
+### Manual
+
 1. Copy the file `d3js.js` into the plugin folder of your reveal.js presentation, i.e. `plugin/d3js`.
 
 2. Add the plugins to the dependencies in your presentation
@@ -17,10 +39,10 @@ iframe elements.
 Reveal.initialize({
 	// ...
 	dependencies: [
-		// ... 
+		// ...
 		{ src: 'https://d3js.org/d3.v4.min.js' },
 		{ src: 'plugin/d3js/d3js.js' },
-		// ... 
+		// ...
 	]
 });
 ```
