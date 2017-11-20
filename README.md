@@ -23,7 +23,7 @@ Reveal.initialize({
 	dependencies: [
 		// ...
 		{ src: 'https://d3js.org/d3.v4.min.js' },
-		{ src: 'plugin/d3js/d3js.js' },
+		{ src: 'node_modules/reveal.js-d3js/d3js.js' },
 		// ...
 	]
 });
